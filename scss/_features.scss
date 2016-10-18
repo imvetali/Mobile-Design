@@ -1,0 +1,91 @@
+.features {
+	
+	&-wrapper {
+		background-color: #f9f9f9;
+		border-bottom: 1px solid #e7e7e7;
+		padding-bottom: 50px;
+	}
+	&-title {
+		padding-top: 48px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 900;
+		font-size: 36px;
+		color: $primary-black;
+		text-align: center;
+		@include media ($mobile) {
+			font-size: 29.17px;
+		}
+	}
+
+	&-subtitle {
+		margin-top: 13px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		font-size: 20px;
+		color: $primary-black;
+		text-align: center;
+		@include media ($mobile) {
+			font-size: 16.67px;
+		}		
+	}
+
+	&-name {
+		margin: 26px 0 20px;
+		font-family: 'Lato', sans-serif;
+		font-weight: bold;
+		font-size: 15px;
+		color: $primary-black;
+		text-transform: uppercase;
+		&:hover {
+			color: $primary-blue;
+			transition: .4s;
+		}	
+	}
+
+	&-item {
+		margin-top: 25px;
+		text-align: center;
+		i {
+			margin: 0 auto 26px;
+			border: 4px solid #efefef;
+			background-color: $primary-blue;
+			border-radius: 85px;
+			width: 170px;
+			height: 170px;
+			display: block;
+			color: #fff;
+			&:hover {
+				background-color: $primary-black;
+				transition: .4s;
+			}
+		}
+
+		.icon-light-bulb {
+			padding-top: 43px;
+			font-size: 72px;
+		}
+
+		.icon-mobile {
+			font-size: 80px;
+			padding-top: 44px;
+		}
+
+		.icon-speech {
+			font-size: 55px;
+			padding-top: 55px;
+		}
+
+		.icon-speechtriple {
+			font-size: 57px;
+			padding-top: 57px;
+		}
+	}
+
+	&-subhead {
+		margin: 0 auto;
+		width: 	210px;
+		font-family: 'Lato', sans-serif;
+		font-size: 13px;
+		color: $primary-grey;
+	}
+}

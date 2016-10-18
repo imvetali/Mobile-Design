@@ -1,0 +1,55 @@
+header {
+	@include outer-container (100%);
+}
+
+.header {
+	&-logo {
+		@include span-columns (4);
+		@include media ($predesk) {
+			@include span-columns (2);
+		}
+	}
+	&-nav {
+		@include span-columns (8);
+		@include omega ();
+		@include media ($predesk) {
+			@include span-columns (10);
+		}
+	}
+	&-presentation {
+		@include span-columns (6.5);
+		@include shift (5.2);
+		@include media ($tablet) {
+			@include span-columns (10);
+			@include shift (2);
+		}
+		@include media ($mobile) {
+			@include span-columns (12);
+			@include shift (0);
+		}
+	}
+
+	&-buttons {
+		@include media ($mobile) {
+			text-align: center;
+		}
+	}
+}
+
+.features {
+	@include outer-container (1156px);
+	&-item {
+		@include span-columns (3);
+		@include media ($tablet) {
+			@include span-columns(6);
+			@include omega();
+		}
+		@include media ($mobile) {
+			@include span-columns(12);
+		}
+	}
+}
+
+.account {
+	@include outer-container (1141px);
+}
